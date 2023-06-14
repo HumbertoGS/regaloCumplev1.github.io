@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <style>
+      .regalo {
+        width: 23rem;
+      }
+      .caja,
+      .tapa,
+      .mensaje {
+        position: relative;
+        margin: 0 auto;
+      }
+      .caja {
+        background-color: #d8210d;
+        height: 150px;
+        width: 97%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.2);
+      }
+      .tapa {
+        background-color: #aa1605;
+        height: 50px;
+        z-index: 1;
+        top: 140;
+        transition: ease-out 0.5s;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+      }
+      .mensaje {
+        font-size: 24px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        top: 170px;
+        transition: all ease-out 0.5s;
+      }
+      .mensaje p {
+        margin: 0px;
+        height: 100%;
+      }
+      .mensaje label {
+        color: #ff6468;
+        font-style: italic;
+        margin-left: 20px;
+      }
+      .caja span,
+      .tapa span {
+        position: absolute;
+        display: block;
+        background: #ffee00cc;
+      }
+      .caja span:first-child {
+        width: 100%;
+        height: 40px;
+        top: 30px;
+      }
+      .caja span:last-child {
+        width: 40px;
+        height: 100%;
+        left: 110px;
+      }
+      .tapa span {
+        width: 40px;
+        height: 100%;
+        left: 115.5px;
+      }
+      .regalo:hover .tapa {
+        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+        transform: rotateZ(-5deg);
+        top: 0px;
+      }
+      .regalo:hover .mensaje {
+        top: 0px;
+      }
+      .regalo:hover hr {
+        display: none;
+      }
+      .regalo:hover .tapa2 {
+        display: none;
+      }
+      .regalo:hover .tapa3 {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 53px;
+        background: #ffffff;
+      }
+      .regalo:hover .lazo {
+        display: block;
+        position: relative;
+        z-index: 2;
+        transform: rotate(329deg);
+        width: 10rem;
+        top: 39;
+        left: -70;
+      }
+      .conejo {
+        width: 12rem;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+      }
+      .mensaje p {
+        margin: 0px;
+      }
+      h3 {
+        color: #ff6468;
+        font-style: italic;
+        margin-left: 20px;
+      }
+      .tapa2 {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 53px;
+      }
+      .tapa3 {
+        display: none;
+      }
+      .conejo2 {
+        height: 100%;
+      }
+      hr {
+        position: relative;
+        top: 40;
+      }
+      .lazo {
+        display: block;
+        position: relative;
+        z-index: 2;
+        transform: rotate(329deg);
+        width: 10rem;
+        top: 167;
+        left: -70;
+        transition: all ease-out 0.5s;
+      }
+      .tag {
+        position: absolute;
+        transform: translate(50%, 50%);
+        padding: 5px 10px;
+        background-color: #ffcc00;
+        color: #fff;
+        font-weight: bold;
+        width: 120px;
+        right: 90;
+      }
+      .I {
+        top: 80;
+      }
+      .by {
+        top: 100;
+      }
+      @media screen and (max-width: 992px) {
+        .regalo {
+          width: 25rem;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .regalo {
+          width: 23rem;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .regalo {
+          width: 21rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="regalo">
+        <div class="tapa3"></div>
+        <div class="tapa2">
+          <img class="conejo2" src="./assets/img/giphy.gif" />
+          <h3>Toca el regalo</h3>
+        </div>
+        <hr />
+        <img class="lazo" src="./assets/img/gift-box228.png" />
+        <div class="tapa">
+          <span></span>
+        </div>
+        <div class="mensaje">
+          <label>¡¡Feliz Cumpleaños Madre!!</label>
+          <p>
+            <img class="conejo" src="./assets/img/MCLl.gif" />
+          </p>
+        </div>
+        <div class="caja">
+          <span></span>
+          <div class="tag I">De: Humberto</div>
+          <div class="tag by">Para: La mamá</div>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
